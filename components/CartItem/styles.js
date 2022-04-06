@@ -1,15 +1,11 @@
-import { Dimensions, StyleSheet } from 'react-native';
+import {
+     Dimensions,
+     StyleSheet
+} from 'react-native';
 
 export const styles = StyleSheet.create({
-     container: {
-          flex: 1,
-          backgroundColor: "#fff",
-          alignItems: "center",
-          justifyContent: "center",
-          position: "relative",
-     },
      carContainer: {
-          height: Dimensions.get("window").height,
+          height: (Dimensions.get("window").height) + 28,
           width: "100%",
      },
      titleContainer: {
@@ -37,6 +33,6 @@ export const styles = StyleSheet.create({
           width: "100%",
      },
      subtitleCTA: {
-          textDecorationLine:"underline",
+          textDecorationLine: "underline",
      }
 });
