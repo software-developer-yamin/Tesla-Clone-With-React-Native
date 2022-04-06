@@ -1,4 +1,5 @@
 import { Text, View, ImageBackground } from "react-native";
+import Button from "../Button";
 import { styles } from "./styles";
 
 const CartItem = () => {
@@ -12,6 +13,7 @@ const CartItem = () => {
         <Text style={styles.title}>Model S</Text>
         <Text style={styles.subtitle}>Starting at $67,450</Text>
       </View>
+      <Button />
     </View>
   );
 };
