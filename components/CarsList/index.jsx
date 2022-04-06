@@ -1,4 +1,4 @@
-import { FlatList, StyleSheet, View } from "react-native";
+import { Dimensions, FlatList, StyleSheet, View } from "react-native";
 import CartItem from "../CartItem";
 import cars from "./cars";
 
@@ -16,6 +16,10 @@ const CarsList = () => {
             backgroundImage={item.image}
           />
         )}
+        snapToAlignment={"start"}
+        decelerationRate={"fast"}
+        snapToInterval={Dimensions.get("window").height}
+        showsVerticalScrollIndicator={false}
       />
     </View>
   );
