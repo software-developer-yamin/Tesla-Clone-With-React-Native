@@ -31,4 +31,12 @@ export const styles = StyleSheet.create({
           position: "absolute",
           resizeMode: "cover",
      },
+     buttonContainer: {
+          position: "absolute",
+          bottom: 50,
+          width: "100%",
+     },
+     subtitleCTA: {
+          textDecorationLine:"underline",
+     }
 });
