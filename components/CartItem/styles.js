@@ -1,4 +1,4 @@
-import { StyleSheet } from 'react-native';
+import { Dimensions, StyleSheet } from 'react-native';
 
 export const styles = StyleSheet.create({
      container: {
@@ -9,7 +9,7 @@ export const styles = StyleSheet.create({
           position: "relative",
      },
      carContainer: {
-          height: "100%",
+          height: Dimensions.get("window").height,
           width: "100%",
      },
      titleContainer: {
